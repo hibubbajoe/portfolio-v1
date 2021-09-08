@@ -17,6 +17,7 @@ body {
     color: var(--offwhite);
     background-color: var(--black);
     font-family: StretchPro;
+    overflow: hidden;
 }
 
 ul {

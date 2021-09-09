@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/contact-page.css';
+import RevealerNav from './RevealerNav';
 
 const ContactPage = () => {
 
@@ -13,27 +14,29 @@ const ContactPage = () => {
     }
 
     return (
-        <div class="contact-page">
-            <Link id="contact-link-btn" to="/">Go back</Link>
-            <div class="contact-container">
-                <a
-                    class="contact-info"
-                    id="email"
-                    onMouseEnter={emailHoover}
-                    onMouseLeave={emailHoover}
-                    href="mailto:robin.hedlund@live.se"
-                >
-                    Email
-                </a>
+        <div>
+            <RevealerNav />
+            <div class="contact-page">
+                <div class="contact-container">
+                    <a
+                        class="contact-info"
+                        id="email"
+                        onMouseEnter={emailHoover}
+                        onMouseLeave={emailHoover}
+                        href="mailto:robin.hedlund@live.se"
+                    >
+                        Email
+                    </a>
 
-                <a
-                    class="contact-info"
-                    id="phoneNumber"
-                    onMouseEnter={phoneNumberHoover}
-                    onMouseLeave={phoneNumberHoover}
-                    href="sms:+46762408185">
-                    Phone Number
-                </a>
+                    <a
+                        class="contact-info"
+                        id="phoneNumber"
+                        onMouseEnter={phoneNumberHoover}
+                        onMouseLeave={phoneNumberHoover}
+                        href="sms:+46762408185">
+                        Phone Number
+                    </a>
+                </div>
             </div>
         </div>
     )

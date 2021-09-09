@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/about-page.css'
-import { Link } from 'react-router-dom'
+import RevealerNav from './RevealerNav';
 const AboutPage = () => {
 
     // JAG VILL SÄTTA ATT ANTINGEN BODY BG ELLER SPAN COLOR ÄNDRAR FÄRG PÅ HOOVER
@@ -19,18 +19,15 @@ const AboutPage = () => {
 
 
     return (
-        <div class="about-page">
-            <Link
-                onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => setHover(false)} class="about-link-btn" to="/">
-                Go back
-            </Link>
+        <div >
+            <RevealerNav />
+            <div class="about-page">
+                <span class="about-span">ROBIN HEDLUND IS AN UP-AND-COMING WEB DEVELOPER AND MUSICIAN BASED IN STOCKHOLM, SWEDEN. < br /> < br />
 
-            <span class="about-span">ROBIN HEDLUND IS AN UP-AND-COMING WEB DEVELOPER AND MUSICIAN BASED IN STOCKHOLM, SWEDEN. < br /> < br />
+                    ROBIN IS CURRENTLY ATTENDING THE HIGHLY PROCLAIMED NACKADEMIN WHERE HE IS STUDYING TO BECOME A "FULL STACK WEB DEVELOPER". < br /> < br />
 
-                ROBIN IS CURRENTLY ATTENDING THE HIGHLY PROCLAIMED NACKADEMIN WHERE HE IS STUDYING TO BECOME A "FULL STACK WEB DEVELOPER". < br /> < br />
-
-                NACKADEMIN IS A SCHOOL THAT OFFERS A "HIGHER VOCATIONAL EDUCATION" WHICH IS A POST-SECONDARY FORM OF EDUCATION THAT COMBINES THEORETICAL AND PRACTICAL STUDIES IN CLOSE COOPERATION WITH EMPLOYERS AND INDUSTRY. PROGRAMMES ARE OFFERED IN SPECIFIC FIELDS WHERE THERE IS AN EXPLICIT DEMAND FOR COMPETENCE.</span>
+                    NACKADEMIN IS A SCHOOL THAT OFFERS A "HIGHER VOCATIONAL EDUCATION" WHICH IS A POST-SECONDARY FORM OF EDUCATION THAT COMBINES THEORETICAL AND PRACTICAL STUDIES IN CLOSE COOPERATION WITH EMPLOYERS AND INDUSTRY. PROGRAMMES ARE OFFERED IN SPECIFIC FIELDS WHERE THERE IS AN EXPLICIT DEMAND FOR COMPETENCE.</span>
+            </div>
         </div>
     )
 

@@ -55,10 +55,10 @@ const RevealerNav = () => {
                     </ul>
                     <ul className="socials">
                         <li className="socials-item">
-                            <a href="https://www.instagram.com/hibubbajoe/" target="_blank" className="instagram-btn">Instagram</a>
+                            <a href="https://www.instagram.com/hibubbajoe/" target="_blank" rel="noreferrer" className="instagram-btn">Instagram</a>
                         </li>
                         <li className="socials-item">
-                            <a href="https://githu.com/hibubbajoe" target="_blank" className="github-btn">Github</a>
+                            <a href="https://githu.com/hibubbajoe" target="_blank" rel="noreferrer" className="github-btn">Github</a>
                         </li>
                     </ul>
                 </nav>

@@ -3,6 +3,8 @@ import RevealerNav from './RevealerNav';
 
 const ContactPage = () => {
 
+    const phoneNumber = document
+
     const emailHoover = (e) => {
         e.target.innerText = e.type === "mouseenter" ? "ROBIN.HEDLUND@LIVE.SE" : "EMAIL";
     }

@@ -30,3 +30,31 @@
 .about-link-btn:hover {
     color: #c6e421;
 }
+
+@media screen and (max-width: 1300px) {
+
+    .about-span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .about-span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .about-span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .about-span {
+        font-size: .7rem;
+    }
+}

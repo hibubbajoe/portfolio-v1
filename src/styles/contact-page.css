@@ -7,20 +7,21 @@
 }
 
 .contact-page {
-    padding: 40px 30px;
-    color: white;
+    padding: 40px 40px;
+    color: var(--offwhite);
     background-color: rgb(77, 67, 67);
+    /* padding: 40px 30px; */
+    width: auto;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-container {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contact-info {
@@ -28,18 +29,12 @@
     font-size: 3rem;
     letter-spacing: -2px;
     font-weight: 300 !important;
-    width: 60rem;
     margin: 2rem;
     text-align: center;
     opacity: 1;
     animation: 1s slide-in;
 }
 
-.contact-page {
-    display: flex;
-    flex-direction: column;
-
-}
 
 @keyframes slide-in {
     from {
@@ -54,4 +49,34 @@
 
 #contact-link-btn {
     color: white !important;
+}
+
+
+/* LAPTOP */
+@media screen and (max-width: 1300px) {
+    .contact-info {
+        font-size: 2.5rem;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 850px) {
+    .contact-info {
+        font-size: 2rem;
+    }
+}
+
+
+/* MOBILE L */
+@media screen and (max-width: 550px) {
+    .contact-info {
+        font-size: 1rem;
+    }
+}
+
+/* MOBILE S  */
+@media screen and (max-width: 350px) {
+    .contact-info {
+        font-size: .8rem;
+    }
 }

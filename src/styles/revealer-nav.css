@@ -1,0 +1,137 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --puke: #c6e421;
+    --frank: #ff7e30;
+    --offwhite: #f5f5f5;
+    --pinkypink: rgb(206, 157, 157);
+}
+
+.landing-page {
+    padding: 40px 30px;
+    font-size: 1rem;
+    line-height: 1.2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button {
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--frank);
+    border: 0;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    margin: 20px;
+    outline: none;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+}
+
+.header__button[data-open="true"] {
+    background-color: #000;
+    animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+    transition: background-color 50ms linear;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+.visited {
+    display: inline-block;
+    color: var(--pinkypink) !important;
+    transform: skew(-30deg) !important;
+}
+
+.header__nav {
+    background-color: var(--frank);
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.header__nav[data-active="true"] {
+    visibility: visible;
+}
+
+.socials__menu,
+.header__menu {
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu>.header__menu-item {
+    font-size: 10vh;
+
+}
+
+.header__menu>.header__menu-item:not(:last-of-type) {
+    margin-bottom: 0em;
+}
+
+.socials {
+    position: absolute;
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    top: 85%;
+    letter-spacing: 3px;
+}
+
+.socials-item {
+    font-size: 33px;
+}
+
+.socials-item a {
+    letter-spacing: -2px;
+    font-weight: 300 !important;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__menu-item a {
+    letter-spacing: -4px;
+    font-weight: 300 !important;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header__menu-item a:hover,
+.socials-item a:hover {
+    color: var(--pinkypink);
+}

@@ -1,10 +1,7 @@
-import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom'
-import '../styles/portfolio-page.css'
+import React from 'react';
 import RevealerNav from './RevealerNav';
 
 const PortfolioPage = () => {
-
 
     return (
         <div>

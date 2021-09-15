@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/about-page.css'
 import RevealerNav from './RevealerNav';
 const AboutPage = () => {
 
@@ -16,7 +15,6 @@ const AboutPage = () => {
     console.log(hover)
 
     console.log(span)
-
 
     return (
         <div >

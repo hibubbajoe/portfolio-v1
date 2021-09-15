@@ -6,18 +6,15 @@ const RevealerNav = () => {
     const [revealerNav, setRevealerNav] = useState(() => { })
     let lastVisitedPage = useLocation().pathname;
 
-    let visited =
-        useEffect(() => {
-            setActionBtn(document.querySelector(".nav-btn-js"));
-            setRevealerNav(window.revealer({
-                revealElementSelector: ".nav-js",
-                options: {
-                    anchorSelector: ".nav-btn-js",
-                },
-            }));
-        }, []);
-
-
+    useEffect(() => {
+        setActionBtn(document.querySelector(".nav-btn-js"));
+        setRevealerNav(window.revealer({
+            revealElementSelector: ".nav-js",
+            options: {
+                anchorSelector: ".nav-btn-js",
+            },
+        }));
+    }, []);
 
     const handleClick = () => {
         if (!revealerNav.isRevealed()) {

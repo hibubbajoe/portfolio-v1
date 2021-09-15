@@ -14,10 +14,11 @@
 }
 
 .contact-container {
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +34,6 @@
     opacity: 1;
     animation: 1s slide-in;
 }
-
 
 .contact-page {
     display: flex;
